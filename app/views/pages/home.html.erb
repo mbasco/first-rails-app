@@ -1,0 +1,13 @@
+<h1>Welcome to our website</h1>
+
+<p>Today is  <strong><%= @time %></strong></p>
+
+<ul>
+    <li><%= link_to "Learn More", about_path %>
+    <li><%= link_to "Contact Us", contact_path %>
+</ul>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
